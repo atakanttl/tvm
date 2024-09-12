@@ -35,10 +35,11 @@ You can use the "use" command to symlink specific version without the "install" 
 ./tvm list
 ```
 
-- Remove specific Terraform version
+- Remove unused or all Terraform versions
 
 ```bash
-./tvm remove 1.6.4
+./tvm remove unused # Removes all versions except the active version
+./tvm remove all
 ```
 
 - Get available commands and their descriptions
