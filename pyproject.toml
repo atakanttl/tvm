@@ -1,0 +1,10 @@
+[project]
+name = "tvm"
+version = "0.1.0"
+dependencies = [
+    "requests",
+    "fire"
+]
+
+[project.scripts]
+tvm = "tvm:main"

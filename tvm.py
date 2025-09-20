@@ -183,7 +183,7 @@ if not os.path.isdir(TVM_PATH):
     print("Please add tvm directory to the path to use Terraform binaries:")
     print(f'\texport PATH="{TVM_PATH}:$PATH"')
 
-if __name__ == "__main__":
+def main():
     fire.Fire(
         {
             "install": install_terraform,
@@ -195,3 +195,6 @@ if __name__ == "__main__":
             "list": list_versions,
         }
     )
+
+if __name__ == "__main__":
+    main()

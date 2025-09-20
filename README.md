@@ -6,7 +6,13 @@ It supports both MacOS and Linux, and both arm64 and amd64 architectures.
 
 ## Usage
 
-- Install the required libraries
+- Option 1. Install from pipx (recommended)
+
+```bash
+pipx install .
+```
+
+- Option 2. Install the required libraries
 
 ```bash
 python3 -m pip install --user -r requirements.txt
@@ -15,16 +21,17 @@ python3 -m pip install --user -r requirements.txt
 - Install specific Terraform version
 
 ```bash
-./tvm install 1.6.4
+tvm install 1.6.4
+# ./tvm.py install - if you chose option 2.
 
 # You can feed multiple versions to the command
-./tvm install 1.5.2 1.5.3
+tvm install 1.5.2 1.5.3
 ```
 
 - Use specific Terraform version
 
 ```bash
-./tvm use 1.6.4
+tvm use 1.6.4
 ```
 
 You can use the "use" command to symlink specific version without the "install" command. "use" command symlinks the installed Terraform versions from `~/.tvm/` path.
